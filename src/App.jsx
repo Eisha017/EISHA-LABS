@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="app">
       <Navbar />
 
       <main>
@@ -23,7 +23,7 @@ function App() {
       </main>
 
       <Footer />
-    </BrowserRouter>
+    </div>
   );
 }
 
